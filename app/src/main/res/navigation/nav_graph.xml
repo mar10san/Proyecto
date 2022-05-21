@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/fragmentHome">
+
+    <fragment
+        android:id="@+id/fragmentHome"
+        android:name="com.example.proyecto.FragmentHome"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/fragmentPresentacion"
+        android:name="com.example.proyecto.tablas.FragmentPresentacion"
+        android:label="fragment_presentacion"
+        tools:layout="@layout/fragment_presentacion" >
+        <action
+            android:id="@+id/action_fragmentPresentacion_to_fragmentTablas2"
+            app:destination="@id/fragmentTablas2" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentNumeros"
+        android:name="com.example.proyecto.FragmentNumeros"
+        android:label="fragment_numeros"
+        tools:layout="@layout/fragment_numeros" />
+    <fragment
+        android:id="@+id/fragmentRetro"
+        android:name="com.example.proyecto.FragmentRetro"
+        android:label="fragment_retro"
+        tools:layout="@layout/fragment_retro" />
+    <fragment
+        android:id="@+id/fragmentResultado"
+        android:name="com.example.proyecto.tablas.FragmentResultado"
+        android:label="fragment_resultado"
+        tools:layout="@layout/fragment_resultado" >
+        <action
+            android:id="@+id/action_fragmentResultado_to_fragmentTablas2"
+            app:destination="@id/fragmentTablas2" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentTablas2"
+        android:name="com.example.proyecto.tablas.FragmentTablas"
+        android:label="fragment_tablas"
+        tools:layout="@layout/fragment_tablas" >
+        <action
+            android:id="@+id/action_fragmentTablas2_to_fragmentPresentacion"
+            app:destination="@id/fragmentPresentacion" />
+        <action
+            android:id="@+id/action_fragmentTablas2_to_fragmentResultado"
+            app:destination="@id/fragmentResultado" />
+        <argument
+            android:name="respuestaCorrecta"
+            app:argType="boolean"
+            android:defaultValue="true" />
+        <action
+            android:id="@+id/action_fragmentTablas2_to_fragmentResultado2"
+            app:destination="@id/fragmentResultado2" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentResultado2"
+        android:name="com.example.proyecto.tablas.FragmentResultado2"
+        android:label="fragment_resultado2"
+        tools:layout="@layout/fragment_resultado2" >
+        <action
+            android:id="@+id/action_fragmentResultado2_to_fragmentTablas2"
+            app:destination="@id/fragmentTablas2" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentVolley2"
+        android:name="com.example.proyecto.FragmentVolley"
+        android:label="fragment_volley"
+        tools:layout="@layout/fragment_volley" />
+</navigation>
