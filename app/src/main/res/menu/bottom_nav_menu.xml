@@ -8,16 +8,16 @@
         />
     <item
         android:id="@+id/fragmentPresentacion"
-        android:icon="@drawable/ic_multiplicacion"
-        android:title="Tablas" />
+        android:icon="@drawable/ic_multiplicar"
+        android:title="Tablas"/>
     <item
         android:id="@+id/fragmentNumeros"
         android:icon="@drawable/ic_numeros"
         android:title="Numeros" />
     <item
         android:id="@+id/fragmentVolley"
-        android:icon="@drawable/ic_pokemon"
-        android:title="Volley" />
+        android:icon="@drawable/ic_headphone"
+        android:title="Games" />
     <item
         android:id="@+id/fragmentRetro"
         android:icon="@drawable/ic_internet"

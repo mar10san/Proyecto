@@ -8,11 +8,18 @@
         <entry key="..\:/Users/HP15/AndroidStudioProjects/Proyecto/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1" />
         <entry key="..\:/Users/HP15/AndroidStudioProjects/Proyecto/app/src/main/res/layout/activity_main.xml" value="0.16032608695652173" />
         <entry key="..\:/Users/HP15/AndroidStudioProjects/Proyecto/app/src/main/res/layout/fragment_home.xml" value="0.16032608695652173" />
+        <entry key="..\:/Users/HP15/AndroidStudioProjects/Proyecto/app/src/main/res/layout/fragment_informacion.xml" value="0.1" />
+        <entry key="..\:/Users/HP15/AndroidStudioProjects/Proyecto/app/src/main/res/layout/fragment_juego.xml" value="0.2" />
+        <entry key="..\:/Users/HP15/AndroidStudioProjects/Proyecto/app/src/main/res/layout/fragment_lista.xml" value="0.2" />
+        <entry key="..\:/Users/HP15/AndroidStudioProjects/Proyecto/app/src/main/res/layout/fragment_numeros.xml" value="0.2" />
         <entry key="..\:/Users/HP15/AndroidStudioProjects/Proyecto/app/src/main/res/layout/fragment_practica.xml" value="0.1" />
         <entry key="..\:/Users/HP15/AndroidStudioProjects/Proyecto/app/src/main/res/layout/fragment_presentacion.xml" value="0.2" />
         <entry key="..\:/Users/HP15/AndroidStudioProjects/Proyecto/app/src/main/res/layout/fragment_resultado.xml" value="0.1" />
         <entry key="..\:/Users/HP15/AndroidStudioProjects/Proyecto/app/src/main/res/layout/fragment_resultado2.xml" value="0.1" />
+        <entry key="..\:/Users/HP15/AndroidStudioProjects/Proyecto/app/src/main/res/layout/fragment_retro.xml" value="0.2" />
         <entry key="..\:/Users/HP15/AndroidStudioProjects/Proyecto/app/src/main/res/layout/fragment_tablas.xml" value="0.2" />
+        <entry key="..\:/Users/HP15/AndroidStudioProjects/Proyecto/app/src/main/res/layout/fragment_volley.xml" value="0.2" />
+        <entry key="..\:/Users/HP15/AndroidStudioProjects/Proyecto/app/src/main/res/layout/vista_propia.xml" value="0.33" />
         <entry key="..\:/Users/HP15/AndroidStudioProjects/Proyecto/app/src/main/res/menu/bottom_nav_menu.xml" value="0.2" />
       </map>
     </option>
@@ -22,5 +29,12 @@
   </component>
   <component name="ProjectType">
     <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.22" />
+      </ProjectState>
+    </option>
   </component>
 </project>

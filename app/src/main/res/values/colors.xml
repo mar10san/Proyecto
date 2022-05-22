@@ -18,10 +18,9 @@
     <color name="green_300">#aaf255</color>
     <color name="green_500">#75e900</color>
     <color name="green_700">#41c300</color>
-    <color name="black_400">#c3c3c3</color>
+    <color name="black_400">#ff6961</color>
     <color name="black_800">#262626</color>
     <color name="black_900">#000000</color>
-
 
 
 </resources>

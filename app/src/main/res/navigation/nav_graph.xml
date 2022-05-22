@@ -21,9 +21,13 @@
     </fragment>
     <fragment
         android:id="@+id/fragmentNumeros"
-        android:name="com.example.proyecto.FragmentNumeros"
+        android:name="com.example.proyecto.numeros.FragmentNumeros"
         android:label="fragment_numeros"
-        tools:layout="@layout/fragment_numeros" />
+        tools:layout="@layout/fragment_numeros" >
+        <action
+            android:id="@+id/action_fragmentNumeros_to_fragmentJuego"
+            app:destination="@id/fragmentJuego" />
+    </fragment>
     <fragment
         android:id="@+id/fragmentRetro"
         android:name="com.example.proyecto.FragmentRetro"
@@ -67,8 +71,42 @@
             app:destination="@id/fragmentTablas2" />
     </fragment>
     <fragment
-        android:id="@+id/fragmentVolley2"
-        android:name="com.example.proyecto.FragmentVolley"
+        android:id="@+id/fragmentVolley"
+        android:name="com.example.proyecto.volley.FragmentVolley"
         android:label="fragment_volley"
-        tools:layout="@layout/fragment_volley" />
+        tools:layout="@layout/fragment_volley" >
+        <action
+            android:id="@+id/action_fragmentVolley_to_fragmentLista"
+            app:destination="@id/fragmentLista" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentJuego"
+        android:name="com.example.proyecto.numeros.FragmentJuego"
+        android:label="fragment_juego"
+        tools:layout="@layout/fragment_juego" >
+        <action
+            android:id="@+id/action_fragmentJuego_to_fragmentNumeros"
+            app:destination="@id/fragmentNumeros" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentLista"
+        android:name="com.example.proyecto.volley.FragmentLista"
+        android:label="fragment_lista"
+        tools:layout="@layout/fragment_lista" >
+        <action
+            android:id="@+id/action_fragmentLista_to_fragmentVolley"
+            app:destination="@id/fragmentVolley" />
+        <action
+            android:id="@+id/action_fragmentLista_to_fragmentInformacion"
+            app:destination="@id/fragmentInformacion" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentInformacion"
+        android:name="com.example.proyecto.volley.FragmentInformacion"
+        android:label="fragment_informacion"
+        tools:layout="@layout/fragment_informacion" >
+        <action
+            android:id="@+id/action_fragmentInformacion_to_fragmentLista"
+            app:destination="@id/fragmentLista" />
+    </fragment>
 </navigation>

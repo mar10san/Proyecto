@@ -13,6 +13,8 @@ import androidx.navigation.fragment.findNavController
 import com.example.proyecto.R
 import kotlin.random.Random
 
+var decision:Boolean=true
+
 class FragmentTablas : Fragment() {
     private lateinit var tvFactor1:TextView
     private lateinit var tvFactor2: TextView
@@ -22,7 +24,7 @@ class FragmentTablas : Fragment() {
     var factor1:Int = 0
     var factor2:Int = 0
     var producto:Int = 0
-    var respuestaCorrecta = false
+
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -34,6 +36,7 @@ class FragmentTablas : Fragment() {
         etRespuesta = vista.findViewById(R.id.etRespuesta)
         btnVerificar = vista.findViewById(R.id.btnVerificar)
         generaMultiplicacion()
+
         btnVerificar.setOnClickListener {
             val strRespuesta = etRespuesta.text.toString()
             if(strRespuesta == ""){
@@ -41,13 +44,13 @@ class FragmentTablas : Fragment() {
             }else{
 
                 if(strRespuesta.toInt() == producto){
-                    generaMultiplicacion()
-                    findNavController().navigate(R.id.action_fragmentTablas2_to_fragmentResultado)
+                    decision = true
                 }
                else {
+                   decision = false
                     generaMultiplicacion()
-                    findNavController().navigate(R.id.action_fragmentTablas2_to_fragmentResultado2)
                }
+                findNavController().navigate(R.id.action_fragmentTablas2_to_fragmentResultado)
             }
         }
         volver = vista.findViewById(R.id.btnVolver)
