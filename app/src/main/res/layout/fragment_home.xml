@@ -11,7 +11,8 @@
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView2"
         android:layout_width="0dp"
-        android:layout_height="660dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="30dp"
         android:foregroundGravity="center"
         android:scaleX=".97"
         android:scaleY=".97"
@@ -30,7 +31,7 @@
             android:layout_height="wrap_content"
             android:text="Datos de los desarrolladores"
             android:textAlignment="center"
-            android:textColor="#000000"
+            android:textColor="#1DE9B6"
             android:textSize="24sp"
             android:textStyle="bold"
             android:translationX="23dp"
@@ -39,14 +40,14 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.505"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/btn_ir_mensaje"
+            app:layout_constraintTop_toBottomOf="@+id/btn_ir_perros"
             app:layout_constraintVertical_bias="0.139" />
 
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="140dp"
             android:scaleX=".95"
-            android:translationY="545dp"
+            android:translationY="520dp"
             app:cardBackgroundColor="#0022FD"
             app:cardCornerRadius="20dp">
 
@@ -61,6 +62,7 @@
                     android:src="@drawable/udg"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
                     app:srcCompat="@drawable/udg"
@@ -81,7 +83,7 @@
                 android:layout_height="150dp"
                 android:scaleX=".95"
                 android:translationY="10dp"
-                app:cardBackgroundColor="#28B301"
+                app:cardBackgroundColor="#2979FF"
                 app:cardCornerRadius="20dp"
                 app:cardElevation="15dp">
 
@@ -98,9 +100,9 @@
                         android:layout_weight="1"
                         android:scaleX=".75"
                         android:scaleY=".75"
-                        app:srcCompat="@drawable/xbox_logo"
-                        tools:src="@drawable/xbox_logo"
-                        tools:srcCompat="@drawable/xbox_logo" />
+                        app:srcCompat="@drawable/backend"
+                        tools:src="@drawable/backend"
+                        tools:srcCompat="@drawable/backend" />
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -124,7 +126,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/boogaloo"
-                            android:text="marco.sdiaz@alumnos,udg.mx"
+                            android:text="marco.sdiaz@alumnos.udg.mx"
                             android:textAlignment="center"
                             android:textColor="#000000"
                             android:textSize="16sp" />
@@ -138,6 +140,14 @@
                             android:textAlignment="center"
                             android:textColor="#000000"
                             android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/textView11"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="\n Desarrollador Backend"
+                            android:textAlignment="center"
+                            android:textStyle="italic" />
                     </LinearLayout>
 
                 </LinearLayout>
@@ -148,7 +158,7 @@
                 android:layout_height="150dp"
                 android:scaleX=".95"
                 android:translationY="170dp"
-                app:cardBackgroundColor="#0214AE"
+                app:cardBackgroundColor="#2979FF"
                 app:cardCornerRadius="20dp"
                 app:cardElevation="15dp">
 
@@ -164,9 +174,9 @@
                         android:layout_weight="1"
                         android:scaleX=".75"
                         android:scaleY=".75"
-                        app:srcCompat="@drawable/playstation_logotype"
-                        tools:src="@drawable/playstation_logotype"
-                        tools:srcCompat="@drawable/playstation_logotype" />
+                        app:srcCompat="@drawable/ui"
+                        tools:src="@drawable/ui"
+                        tools:srcCompat="@drawable/ui" />
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -205,6 +215,14 @@
                             android:textAlignment="center"
                             android:textColor="#000000"
                             android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/textView12"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="\n Desarrollador Frontend"
+                            android:textAlignment="center"
+                            android:textStyle="italic" />
                     </LinearLayout>
 
                 </LinearLayout>
@@ -218,7 +236,7 @@
             android:fontFamily="@font/annie_use_your_telescope"
             android:text="Recopilacion de apps desarrolladas durante el periodo 2022A."
             android:textAlignment="center"
-            android:textColor="#000000"
+            android:textColor="#1DE9B6"
             android:textSize="20sp"
             android:translationY="450dp" />
     </androidx.cardview.widget.CardView>

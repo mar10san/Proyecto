@@ -17,7 +17,7 @@ class FragmentInicioRetro : Fragment() {
     ): View? {
         // Inflate the layout for this fragment
         val vista = inflater.inflate(R.layout.fragment_inicio_retro, container, false)
-        btnit = vista.findViewById(R.id.ir_retro)
+        btnit = vista.findViewById(R.id.btn_ir_perros)
         btnit.setOnClickListener {
             findNavController().navigate((R.id.action_fragmentInicioRetro_to_fragmentRetro))
         }

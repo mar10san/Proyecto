@@ -17,6 +17,11 @@
         tools:ignore="ExtraText"
         tools:targetApi="31">
         <activity
+            android:name=".RetroActivity"
+            android:exported="false"
+            android:label="@string/title_activity_retro"
+            android:theme="@style/Theme.Proyecto.NoActionBar" />
+        <activity
             android:name=".retrofit.ActivityRetro"
             android:exported="false" />
         <activity

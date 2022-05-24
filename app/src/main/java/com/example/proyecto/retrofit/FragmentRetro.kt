@@ -30,14 +30,14 @@ class FragmentRetro : Fragment(), SearchView.OnQueryTextListener {
         // Inflate the layout for this fragment
         val vista = inflater.inflate(R.layout.fragment_retro, container, false)
         binding = FragmentRetroBinding.inflate(layoutInflater)
-        binding.root
+        //setContentView(binding.root)
         binding.svdog.setOnQueryTextListener(this)
         initRecyclerView()
         return vista
     }
     private fun initRecyclerView() {
         adapter = AdapterRetro(images1)
-        binding.rvdog.layoutManager= LinearLayoutManager(requireContext())
+        binding.rvdog.layoutManager= LinearLayoutManager(requireContext(),LinearLayoutManager.VERTICAL, false)
         binding.rvdog.adapter=adapter
     }
 

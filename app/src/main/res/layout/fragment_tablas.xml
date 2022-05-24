@@ -93,7 +93,7 @@
         android:layout_marginTop="50dp"
         android:background="@drawable/boton"
         android:backgroundTint="@color/green_light"
-        android:text="Verificar"
+        android:text="VERIFICAR"
         app:layout_constraintBottom_toTopOf="@+id/btnVolver"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"

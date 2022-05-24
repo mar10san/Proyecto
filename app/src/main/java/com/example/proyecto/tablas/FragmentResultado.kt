@@ -31,8 +31,6 @@ class FragmentResultado : Fragment() {
             animView = vista.findViewById(R.id.animation_view)
             animView.setAnimation(R.raw.opops)
         }
-
-        Toast.makeText(requireContext(),"Verdadero", Toast.LENGTH_LONG).show()
         return vista
     }
 

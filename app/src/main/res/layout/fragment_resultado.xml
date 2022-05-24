@@ -29,7 +29,7 @@
         android:layout_marginBottom="128dp"
         android:background="@drawable/boton"
         android:backgroundTint="#2196F3"
-        android:text="Regresar"
+        android:text="SIGUIENTE"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"

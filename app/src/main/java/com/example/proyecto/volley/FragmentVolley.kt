@@ -17,7 +17,7 @@ class FragmentVolley : Fragment() {
     ): View? {
         val vista = inflater.inflate(R.layout.fragment_volley, container, false)
         //variables de los botones
-        boton1 = vista.findViewById(R.id.btn_ir_mensaje)
+        boton1 = vista.findViewById(R.id.btn_ir_perros)
         boton1.setOnClickListener {
             findNavController().navigate(R.id.action_fragmentVolley_to_fragmentLista) //cuando el boton se ejecuta corresponde a una accion
         }
