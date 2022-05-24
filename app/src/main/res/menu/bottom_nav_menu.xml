@@ -19,7 +19,7 @@
         android:icon="@drawable/ic_headphone"
         android:title="Games" />
     <item
-        android:id="@+id/fragmentRetro"
+        android:id="@+id/fragmentInicioRetro"
         android:icon="@drawable/ic_internet"
         android:title="Retrofit" />
 </menu>

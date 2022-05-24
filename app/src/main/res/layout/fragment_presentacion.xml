@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="700dp"
-    android:background="#84b6f4"
-    android:backgroundTint="#84b6f4"
+    android:background="#0022FD"
+    android:backgroundTint="#0022FD"
     tools:context=".tablas.FragmentPresentacion">
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -21,8 +21,8 @@
             android:layout_marginStart="8dp"
             android:layout_marginTop="16dp"
             android:layout_marginEnd="8dp"
-            android:background="@color/teal_200"
-            app:cardBackgroundColor="#DC7CC8C0"
+            android:background="#050C4C"
+            app:cardBackgroundColor="#050C4C"
             app:cardCornerRadius="25dp"
             app:cardElevation="10dp"
             app:layout_constraintEnd_toEndOf="parent"
@@ -32,7 +32,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="#1199AA"
+                android:background="#226FF3"
                 android:gravity="center"
                 android:orientation="horizontal">
 
@@ -102,7 +102,7 @@
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="#03A9F4">
+                android:background="#0CCD06">
 
                 <ImageView
                     android:id="@+id/imageView4"
