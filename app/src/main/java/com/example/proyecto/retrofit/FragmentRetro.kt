@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import android.widget.EditText
+import android.widget.SearchView
 import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.GridLayoutManager
@@ -19,13 +20,13 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
+import java.util.*
 
 
-class FragmentRetro : Fragment() {
+class FragmentRetro : Fragment(),SearchView.OnQueryTextListener {
     //private lateinit var binding: FragmentRetroBinding
     private lateinit var adapter: AdapterRetro
-    lateinit var sv:EditText
-    lateinit var btnbuscar:Button
+    lateinit var svDog:SearchView
     private lateinit var miRecycler: RecyclerView
     private val images1= mutableListOf<String>()
     override fun onCreateView(
@@ -38,14 +39,8 @@ class FragmentRetro : Fragment() {
         miRecycler = vista.findViewById(R.id.rvdog)
         miRecycler.layoutManager= LinearLayoutManager(requireContext(),LinearLayoutManager.VERTICAL, false)
         miRecycler.adapter=adapter
-        sv = vista.findViewById(R.id.etbuscar)
-        btnbuscar = vista.findViewById(R.id.ir_buscar)
-        val query = sv.text
-        btnbuscar.setOnClickListener {
-            searchByName(query.toString().lowercase())
-            sv.setText("")
-        }
-
+        svDog = vista.findViewById(R.id.svdog)
+        svDog.setOnQueryTextListener(this)
         return vista
     }
     private fun getRetrofit(): Retrofit {
@@ -82,5 +77,16 @@ class FragmentRetro : Fragment() {
         Toast.makeText(requireContext(),"Consulta realizada", Toast.LENGTH_SHORT).show()
     }
 
+    override fun onQueryTextSubmit(query: String?): Boolean {
+        if (query != null) {
+            searchByName(query.lowercase())
+            //Toast.makeText(requireContext(),"Consulta realizada", Toast.LENGTH_SHORT).show()
+        }
+        return true
+    }
 
+
+    override fun onQueryTextChange(newText: String?): Boolean{
+        return true
+    }
 }
