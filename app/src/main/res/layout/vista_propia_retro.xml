@@ -4,13 +4,20 @@
     android:layout_width="match_parent"
     android:layout_height="320dp"
     android:layout_margin="16dp"
-    android:translationY="15dp"
+    app:cardBackgroundColor="#070F40"
     app:cardCornerRadius="16dp">
 
-    <ImageView
-        android:id="@+id/ivJorge"
+    <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:scaleType="centerCrop" />
+        android:scaleX=".95"
+        android:scaleY=".95"
+        app:cardCornerRadius="15dp">
 
+        <ImageView
+            android:id="@+id/ivJorge"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop" />
+    </androidx.cardview.widget.CardView>
 </androidx.cardview.widget.CardView>

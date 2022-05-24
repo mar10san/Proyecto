@@ -5,10 +5,13 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
+import android.widget.EditText
 import android.widget.Toast
-import androidx.appcompat.widget.SearchView
 import androidx.fragment.app.Fragment
+import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import com.example.proyecto.R
 import com.example.proyecto.databinding.FragmentRetroBinding
 import kotlinx.coroutines.CoroutineScope
@@ -16,12 +19,14 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
-import java.util.*
 
 
-class FragmentRetro : Fragment(), SearchView.OnQueryTextListener {
-    private lateinit var binding: FragmentRetroBinding
+class FragmentRetro : Fragment() {
+    //private lateinit var binding: FragmentRetroBinding
     private lateinit var adapter: AdapterRetro
+    lateinit var sv:EditText
+    lateinit var btnbuscar:Button
+    private lateinit var miRecycler: RecyclerView
     private val images1= mutableListOf<String>()
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -29,18 +34,20 @@ class FragmentRetro : Fragment(), SearchView.OnQueryTextListener {
     ): View? {
         // Inflate the layout for this fragment
         val vista = inflater.inflate(R.layout.fragment_retro, container, false)
-        binding = FragmentRetroBinding.inflate(layoutInflater)
-        //setContentView(binding.root)
-        binding.svdog.setOnQueryTextListener(this)
-        initRecyclerView()
+        adapter = AdapterRetro(images1)
+        miRecycler = vista.findViewById(R.id.rvdog)
+        miRecycler.layoutManager= LinearLayoutManager(requireContext(),LinearLayoutManager.VERTICAL, false)
+        miRecycler.adapter=adapter
+        sv = vista.findViewById(R.id.etbuscar)
+        btnbuscar = vista.findViewById(R.id.ir_buscar)
+        val query = sv.text
+        btnbuscar.setOnClickListener {
+            searchByName(query.toString().lowercase())
+            sv.setText("")
+        }
+
         return vista
     }
-    private fun initRecyclerView() {
-        adapter = AdapterRetro(images1)
-        binding.rvdog.layoutManager= LinearLayoutManager(requireContext(),LinearLayoutManager.VERTICAL, false)
-        binding.rvdog.adapter=adapter
-    }
-
     private fun getRetrofit(): Retrofit {
         return Retrofit.Builder()
             .baseUrl("https://dog.ceo/api/breed/")
@@ -53,13 +60,13 @@ class FragmentRetro : Fragment(), SearchView.OnQueryTextListener {
         CoroutineScope(Dispatchers.IO).launch {
             val call = getRetrofit().create(APIService::class.java).getDogsByBreeds("$query/images")
             val puppies = call.body()
-            activity?.runOnUiThread {
-                showAccion()
+            requireActivity().runOnUiThread {
                 if(call.isSuccessful){
                     val images = puppies?.images ?: emptyList()
                     images1.clear()
                     images1.addAll(images)
                     adapter.notifyDataSetChanged()
+                    showAccion()
                 }else{
                     showError()
                 }
@@ -75,15 +82,5 @@ class FragmentRetro : Fragment(), SearchView.OnQueryTextListener {
         Toast.makeText(requireContext(),"Consulta realizada", Toast.LENGTH_SHORT).show()
     }
 
-    override fun onQueryTextSubmit(query: String?): Boolean {
-        if (query != null) {
-            searchByName(query.lowercase(Locale.getDefault()))
-        }
-        return true
-    }
-
-    override fun onQueryTextChange(newText: String?): Boolean{
-        return true
-    }
 
 }
