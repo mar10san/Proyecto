@@ -4,63 +4,85 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#0022FD"
+    android:background="#FF3D00"
     tools:context=".numeros.FragmentJuego">
 
-    <EditText
-        android:id="@+id/etEntradaUsuario"
-        android:layout_width="126dp"
-        android:layout_height="72dp"
-        android:layout_marginTop="228dp"
-        android:layout_marginEnd="32dp"
-        android:ems="10"
-        android:hint="¿?"
-        android:inputType="number"
-        android:textAlignment="center"
-        android:textColor="#FFFFFF"
-        android:textSize="48sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="@+id/imageView9"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/btnComprobar"
+    <androidx.cardview.widget.CardView
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@drawable/boton"
-        android:text="COMPROBAR"
-        android:textColor="#000000"
+        android:layout_height="670dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        android:scaleX=".98"
+        android:scaleY=".97"
+        android:translationY="17dp"
+        app:cardBackgroundColor="#0022FD"
+        app:cardCornerRadius="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etEntradaUsuario"
-        app:layout_constraintVertical_bias="0.291" />
+        app:layout_constraintTop_toTopOf="parent">
 
-    <ImageView
-        android:id="@+id/imageView9"
-        android:layout_width="207dp"
-        android:layout_height="227dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="144dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.078"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/gokudos" />
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="270dp"
-        android:layout_height="59dp"
-        android:layout_marginTop="60dp"
-        android:text="Te reto!!! \n adivina la esfera que tengo escondida..."
-        android:textAlignment="center"
-        android:textAllCaps="true"
-        android:textColor="#FFFFFF"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="270dp"
+                android:layout_height="59dp"
+                android:layout_marginTop="128dp"
+                android:text="Te reto!!! \n adivina la esfera que tengo escondida..."
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/etEntradaUsuario"
+                android:layout_width="126dp"
+                android:layout_height="72dp"
+                android:layout_marginTop="276dp"
+                android:layout_marginEnd="32dp"
+                android:ems="10"
+                android:hint="¿?"
+                android:inputType="number"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="48sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/imageView9"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/btnComprobar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/boton"
+                android:text="COMPROBAR"
+                android:textColor="#000000"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/etEntradaUsuario"
+                app:layout_constraintVertical_bias="0.487" />
+
+            <ImageView
+                android:id="@+id/imageView9"
+                android:layout_width="207dp"
+                android:layout_height="227dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="228dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.076"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/gokudos" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
 </androidx.constraintlayout.widget.ConstraintLayout>

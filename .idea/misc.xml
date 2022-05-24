@@ -7,8 +7,10 @@
         <entry key="..\:/Users/HP15/AndroidStudioProjects/Proyecto/app/src/main/res/drawable/ic_bg.xml" value="0.1945" />
         <entry key="..\:/Users/HP15/AndroidStudioProjects/Proyecto/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1" />
         <entry key="..\:/Users/HP15/AndroidStudioProjects/Proyecto/app/src/main/res/layout/activity_main.xml" value="0.16032608695652173" />
-        <entry key="..\:/Users/HP15/AndroidStudioProjects/Proyecto/app/src/main/res/layout/fragment_home.xml" value="0.16032608695652173" />
+        <entry key="..\:/Users/HP15/AndroidStudioProjects/Proyecto/app/src/main/res/layout/activity_retro.xml" value="0.19202898550724637" />
+        <entry key="..\:/Users/HP15/AndroidStudioProjects/Proyecto/app/src/main/res/layout/fragment_home.xml" value="0.22" />
         <entry key="..\:/Users/HP15/AndroidStudioProjects/Proyecto/app/src/main/res/layout/fragment_informacion.xml" value="0.1" />
+        <entry key="..\:/Users/HP15/AndroidStudioProjects/Proyecto/app/src/main/res/layout/fragment_inicio_retro.xml" value="0.19202898550724637" />
         <entry key="..\:/Users/HP15/AndroidStudioProjects/Proyecto/app/src/main/res/layout/fragment_juego.xml" value="0.2" />
         <entry key="..\:/Users/HP15/AndroidStudioProjects/Proyecto/app/src/main/res/layout/fragment_lista.xml" value="0.2" />
         <entry key="..\:/Users/HP15/AndroidStudioProjects/Proyecto/app/src/main/res/layout/fragment_numeros.xml" value="0.2" />
@@ -20,17 +22,8 @@
         <entry key="..\:/Users/HP15/AndroidStudioProjects/Proyecto/app/src/main/res/layout/fragment_tablas.xml" value="0.2" />
         <entry key="..\:/Users/HP15/AndroidStudioProjects/Proyecto/app/src/main/res/layout/fragment_volley.xml" value="0.2" />
         <entry key="..\:/Users/HP15/AndroidStudioProjects/Proyecto/app/src/main/res/layout/vista_propia.xml" value="0.33" />
+        <entry key="..\:/Users/HP15/AndroidStudioProjects/Proyecto/app/src/main/res/layout/vista_propia_retro.xml" value="0.19202898550724637" />
         <entry key="..\:/Users/HP15/AndroidStudioProjects/Proyecto/app/src/main/res/menu/bottom_nav_menu.xml" value="0.2" />
-        <entry key="..\:/Users/Jorge Antonio/AndroidStudioProjects/Proyecto/app/src/main/res/layout/activity_main.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/Jorge Antonio/AndroidStudioProjects/Proyecto/app/src/main/res/layout/fragment_home.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/Jorge Antonio/AndroidStudioProjects/Proyecto/app/src/main/res/layout/fragment_juego.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/Jorge Antonio/AndroidStudioProjects/Proyecto/app/src/main/res/layout/fragment_lista.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/Jorge Antonio/AndroidStudioProjects/Proyecto/app/src/main/res/layout/fragment_numeros.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/Jorge Antonio/AndroidStudioProjects/Proyecto/app/src/main/res/layout/fragment_presentacion.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/Jorge Antonio/AndroidStudioProjects/Proyecto/app/src/main/res/layout/fragment_tablas.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/Jorge Antonio/AndroidStudioProjects/Proyecto/app/src/main/res/layout/fragment_volley.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/Jorge Antonio/AndroidStudioProjects/Proyecto/app/src/main/res/layout/vista_propia.xml" value="0.20416666666666666" />
-        <entry key="..\:/Users/Jorge Antonio/AndroidStudioProjects/Proyecto/app/src/main/res/menu/bottom_nav_menu.xml" value="0.20416666666666666" />
       </map>
     </option>
   </component>

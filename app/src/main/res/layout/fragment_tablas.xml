@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#84b6f4"
+    android:background="#0022FD"
     tools:context=".tablas.FragmentTablas">
 
     <LinearLayout
@@ -25,7 +25,7 @@
             android:layout_weight="1"
             android:gravity="center"
             android:text="10"
-            android:textColor="#1C2677"
+            android:textColor="#CCC9AE"
             android:textSize="60sp"
             android:textStyle="bold" />
 
@@ -36,7 +36,7 @@
             android:layout_weight="1"
             android:gravity="center"
             android:text="X"
-            android:textColor="#1C2677"
+            android:textColor="#CCC9AE"
             android:textSize="60sp"
             android:textStyle="bold" />
 
@@ -47,7 +47,7 @@
             android:layout_weight="1"
             android:gravity="center"
             android:text="10"
-            android:textColor="#1C2677"
+            android:textColor="#CCC9AE"
             android:textSize="60sp"
             android:textStyle="bold" />
     </LinearLayout>
@@ -59,7 +59,7 @@
         android:layout_marginTop="48dp"
         android:gravity="center"
         android:text="="
-        android:textColor="#1C2677"
+        android:textColor="#CCC9AE"
         android:textSize="60sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -77,8 +77,8 @@
         android:gravity="center"
         android:hint="Tu respuesta"
         android:inputType="number"
-        android:textColor="#1C2677"
-        android:textColorHint="#FFFFFF"
+        android:textColor="#FFEA00"
+        android:textColorHint="#88A9B8"
         android:textSize="34sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
